@@ -1,0 +1,21 @@
+# random number generator seed
+seed : 42
+
+# kernel parameters of minibatch discrimination
+num_kernels : 5
+kernel_dim : 3
+
+# optimizer parameters
+decay : 0.95
+num_decay_steps : 150
+init_learning_rate : 0.005 # if minibatch=True, we recommend 0.005 as initial learning rate. else, 0.03
+
+# training parameters
+data_dim : 1
+num_pretrain_steps : 1000
+num_steps : 1000
+batch_size : 12
+log_every : 10 # write log every N step
+hidden_size : 4
+anim_path : '1D_GAN.mp4'
+minibatch_layer : True
